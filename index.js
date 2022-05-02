@@ -21,18 +21,18 @@ else {
     changeTemp(userSetTemp)
 }
 
-function changeTemp(userSetTemp){
+function changeTemp(userTemp){
     //change the currentTemp to userSetTemp
     // while the currentTemp != userSetTemp do (repeat my code)
-    while( currentTemp != userSetTemp){
+    while( currentTemp != userTemp){
         //if the currentTemp is greater than userSetTemp
-        if(currentTemp > userSetTemp){
+        if(currentTemp > userTemp){
             //decrease my current temp by 1 degree
             console.log("cooling the house by 1 degree")
             currentTemp -= 1
         }
         //if the currentTemp is lower than userSetTemp
-        else if(currentTemp < userSetTemp){
+        else if(currentTemp < userTemp){
             console.log("heating the house by 1 degree")
             //increase my current temp by 1 degree
             currentTemp += 1
@@ -41,9 +41,10 @@ function changeTemp(userSetTemp){
         
             
     }
+    console.log("your house is now", currentTemp)
 }
         
-console.log("your house is now", currentTemp)
+
 //Some test cases
 //currentTemp 17 userSetTemp 40 (see it increase from 17 to 40)
 //currentTemp 40 userSetTemp 17 (see it decrease from 40 to 17)
